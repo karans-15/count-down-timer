@@ -1,0 +1,18 @@
+.container{
+  height: 300px;
+  width: 100%;
+}
+#display{
+  width: 100%;
+  font-size: 72px;
+  text-align: center;
+  margin: 0px auto;
+  color:"black";
+}
+.buttons{
+  text-align: center;
+}
+
+#priv{
+  text-align: center;
+}
