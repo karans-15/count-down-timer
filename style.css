@@ -9,10 +9,13 @@
   margin: 0px auto;
   color:"black";
 }
-.buttons{
-  text-align: center;
+.cen{
+  text-align: center !important;
 }
 
 #priv{
   text-align: center;
+}
+.big{
+  font-size: 18px;
 }
