@@ -1,4 +1,4 @@
-# proj_timer
+# count-down-timer
 
 Instructions:
 
