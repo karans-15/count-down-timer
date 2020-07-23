@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <title>Timer</title>
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet">
@@ -9,11 +10,11 @@
   <body>
     <h1 id=priv>Privado Timer</h1>
     <div class="container">
-      <div id="display">
+      <div id="display" onload="newStart()">
         05:00
       </div>
-      <div class="buttons">
-        <button id="start-pause-reset" onClick="startPause()">Start</button>
+      <div class="cen">
+        <button id="start-pause-reset" onClick="startPause()" class="btn btn-default">Start</button>
       </div>
     </div>
   </body>
