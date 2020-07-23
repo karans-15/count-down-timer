@@ -1,6 +1,30 @@
 //for configurable maximum
 let maxMin = 5;
 let maxSec = 60;
+//NOTE THE MAXIMUM VALUE OF THE TIMER CAN BE EDITED HERE TO DISPLAY ACCORDINGLY ON THE MAIN PAPGE. (IF SECONDS = 0, INITIALIZE AS SECONDS = 60)
+
+//will load the Max time on loading
+function newStart(){
+  if(seconds<10){
+    displaySeconds = "0" + seconds.toString();
+  }
+  else{
+    displaySeconds = seconds;
+  }
+  if(minutes<10){
+    displayMinutes = "0" + minutes.toString();
+  }
+  else{
+    displayMinutes = minutes;
+  }
+  if (seconds==60){
+    displaySeconds="00";
+}
+
+
+//display updated time values
+document.getElementById("display").innerHTML = displayMinutes + ":" + displaySeconds;
+}
 //defining variables for time values
 let seconds= maxSec;
 let minutes= maxMin;
@@ -67,7 +91,25 @@ function startPause(){
   if (isOver()){
     minutes = maxMin;
     seconds = maxSec;
-    document.getElementById("display").innerHTML = "05:00";
+    if(seconds<10){
+      displaySeconds = "0" + seconds.toString();
+    }
+    else{
+      displaySeconds = seconds;
+    }
+    if(minutes<10){
+      displayMinutes = "0" + minutes.toString();
+    }
+    else{
+      displayMinutes = minutes;
+    }
+    if (seconds==60){
+      displaySeconds="00";
+    }
+
+
+    //display updated time values
+    document.getElementById("display").innerHTML = displayMinutes + ":" + displaySeconds;
     x = document.getElementById("display")
     x.style.color="black";
   }
